@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# k8autoflask
 Flask on Kubernetes
 =======
 # Sample REST API running on Kubernetes
@@ -16,5 +14,3 @@ This is a REST API that modifies users in DynamoDB. The API runs on Kubernetes.
 - Python running Connexion Framework
 - Service and deployment definition.
 - Dockerfile
-
->>>>>>> First commit

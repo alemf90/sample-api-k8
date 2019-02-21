@@ -1,0 +1,4 @@
+# Required PIP packages
+boto3
+connexion
+ 

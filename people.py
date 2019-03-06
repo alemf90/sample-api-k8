@@ -3,9 +3,12 @@ import uuid
 from botocore.exceptions import ClientError
 from decimal import *
 
+REGION = 'us-west-2'
+TABLE_NAME = 'peopledb'
+
 # DynamoDB client defined as Global, to allow connection pool reuse.
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
-table = dynamodb.Table('peopledb')
+dynamodb = boto3.resource('dynamodb', region_name=REGION)
+table = dynamodb.Table(TABLE_NAME)
 
 def update(uuid, person):
     try:

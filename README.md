@@ -13,7 +13,7 @@ Once deployed the API will listen on port 80, using as entry point a Load Balanc
 1) Create a DynamoDB:
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.CreateTable.html
 
-Create a table with primary key "id" type String.
+Create a table with primary key ```id``` type String.
 
 2) Modify people.py and set your region and DynamoDB name.
 

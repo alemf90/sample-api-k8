@@ -80,12 +80,17 @@ IMPORTANT:
 If you want to work with Pod level credentails instead of node level credentials check out this project:
 https://github.com/helm/charts/tree/master/stable/kube2iam
 
-6) Deploy the deployment and service
+6) Deploy the deployment and service:
+
+```bash
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
+```
+
+# STUFF TO FIX
+- Right now the API accepts only integers in the fare field (I have to cast the values to Decimal.decimal so that Dynamo catches it without exception.
 
 # TODOS
-- Right now the API accepts only integers in the fare field (I have to cast the values to Decimal.decimal so that Dynamo catches it without exception.
 - Create Helm chart.
 - Create table on deployment.
 - Integrate with Kube2IAM or any other resources as right now credentials are retrieved from Instance role at host level.
